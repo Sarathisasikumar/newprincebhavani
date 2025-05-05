@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: red; /* Change this to your desired color */
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+</script>
+<style>
+.bk{
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHoVhOFZxrD5H_C8hBNTee06TyNYWVOrOdFg&s");
+  background-repeat:02-repeat;
+  background-size:1500px 1000px;
+}
+
+.img-responsive {
+    width: 1300px; /* Set a fixed width */
+    height: 800px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.green-text {
+    font-family: Anton;
+    color: purple;
+}
+
+.red-text {
+    color: red;
+    font-family: Anton;
+    text-align: justify;
+}
+
+.pstyle {
+    font-size: 28px;
+}
+
+h2 {
+    font-family: Lobster, Monospace;
+}
+
+.bl-text {
+    text-align: justify; /* Change this to left */
+}
+
+.bul-text {
+    font-family: Tangerine;
+    color: brown;
+    font-size: 30px; /* Corrected from font-size=30px */
+    text-align: justify;
+}
+
+.ls-text {
+    list-style-image: url("http://bit.ly/2ApzHuw");
+    font-size: 20px;
+    font-family: "Lobster"; /* Corrected from font-family="Lobster" */
+    text-align: left; /* Corrected from text-align="left" */
+}
+
+.d-text {
+    font-family: Lobster;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.topnav {
+    background-color: transparent; /* Change to transparent */
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #808000;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) { display: none; }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive { position: relative; }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.target {
+    font-family: Cinzel;
+    font-size: 14px;
+    color: black;
+    text-align: justify; /* Corrected from text-align=justify */
+}
+
+.target > div {
+    display: none;
+}
+
+.target > div:target {
+    display: block;  
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 100;
+    top: 100;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+</style>
+</head>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900|Tangerine|Anton|Libre+Baskerville|Lobster" rel="stylesheet" type="text/css">
+<body class="bk">
+    <h1 class="green-text pstyle" align="center"> 
+        NEW PRINCE SHRI BHAVANI ARTS AND SCIENCE COLLEGE<br> 
+        (Affiliated to the University of Madras)<br> 
+        Accredited By NAAC With 'A' Grade<br> 
+        ISO 9001:2015 Certified 
+    </h1>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <nav class="topnav" id="myTopnav">
+        <a href="#Home">Home Page</a>
+        <a href="#About">About the college</a>
+        <a href="#Infra">Infrastructure</a>
+        <a href="#Academics">Academics</a>
+        <a href="#Placements">Placements</a>
+        <a href="#Sports">Sports</a>
+        <a href="#How">How to reach us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+
+    <div style="background-color:pink; font-size: 20px; font-weight: bold; text-align: center;">
+        <marquee>
+            <font color="blue">Admissions are now open! Seize this opportunity to shape your future at New Prince Shri Bhavani Arts and Science College, Medavakkam.</font>
+        </marquee>
+    </div>
+    <br>
+    <div style="background-color:grey; font-size: 20px; font-weight: bold; text-align: center;">
+        <marquee>
+            <font color="yellow">This website has been designed by Sarathi, a Master of Science (Computer Science) student at New Prince Shri Bhavani Arts and Science College, Medavakkam.</font>
+        </marquee>
+    </div>
+    <br>
+    <main>
+        <div class="target">
+            <div id="Home">
+                <h2>Classrooms</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/slider-1-1.jpg" alt="Classroom Image" class="img-responsive">
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_6150.jpg" alt="Classroom Image" class="img-responsive">
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_6087.jpg" alt="Classroom Image" class="img-responsive">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/faculty.jpg" alt="Faculty Image" class="img-responsive">
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_0439-1-scaled.jpg" alt="Classroom Image" class="img-responsive">
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_0408-scaled.jpg" alt="Classroom Image" class="img-responsive">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/lab.jpg" alt="Lab Image" class="img-responsive">
+                    </div><br>
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_0465-scaled.jpg" alt="Lab Image" class="img-responsive">
+                    </div><br>
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_3419-scaled.jpg" alt="Lab Image" class="img-responsive">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_3480-scaled.jpg" alt="Lab Image" class="img-responsive">
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_0424-scaled.jpg" alt="Lab Image" class="img-responsive">
+                    </div>
+                    <br>
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/dsc_0430-scaled.jpg" alt="Lab Image" class="img-responsive">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://newprincearts.edu.in/wp-content/uploads/slider2/5k2a2658.jpg" alt="Lab Image" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div id="About">
+                <p class="b1-text">
+                                    <i><b>AIM:</b></i><br>
+                    The New Prince Shri Bhavani Arts and Science College in Medavakkam aims to ensure the all-rounded development of its students through quality education and proper guidance. The college focuses on creating entrepreneurs and researchers while serving the community.
+                    <br><br><i><b>DISCIPLINE DEVOTION DETERMINATION</b></i><br>
+                    <br><br>
+                    <i><b>The list of Educational institutions</b></i>
+                    <ul>
+                        <li>New Prince Shri Bhavani Arts And Science College, Medavakkam, Chennai-600 100.</li>
+                        <li>New Prince Shri Bhavani Arts And Science College Of Engineering And Technology, Santhosapuram, Chennai-600 073.</li>
+                        <li>New Prince Matriculation Higher Secondary School, Ullagaram, Chennai-600 091.</li>
+                        <li>New Prince Shri Bhavani Senior Secondary School, Ullagaram, Chennai-600 091.</li>
+                        <li>New Prince Matriculation Higher Secondary School, Adambakkam, Chennai-600 088.</li>
+                        <li>New Prince Shri Bhavani Senior Secondary School, Adambakkam, Chennai-600 088.</li>
+                    </ul>
+                    <br>
+                    <br>
+                    New Prince Shri Bhavani Arts and Science College was established in 1999 by Smt. Abaranjee Ammal Educational Society which also runs several educational institutions and has been serving the society for more than three decades. The college is affiliated to the prestigious Madras University.
+                    <br>
+                    <br>
+                    The College has a prestigious 20 years of excellence in holistic education as of 2020 and this temple of learning has been striving untiringly for the growth of students. The institution is led by visionary management with strong exposure to industry and academics.
+                    <br>
+                    <br>
+                    <u><i><b>VISION</b></i></u><br>
+                    To be a student-centric academic institution that stands by its motto "Discipline, Devotion, and Determination" and strives to impact value-based education and to inculcate the latest trends to create innovators and to attain wisdom through holistic education.<br>
+                    <br>
+                    <br>
+                    <u><i><b>MISSION</b></i></u><br>
+                    Aiming for academic excellence, knowledge enhancement, and critical thinking capabilities. To uplift the rural youth, innovative and dynamic teaching is adopted. With the spirit of skill, charisma, faith, creativity, discipline, respect, and social service etiquette, an optimistic approach is taught.
+                    <br>
+                    <br>
+                    <u><i><b>News & Events</b></i></u><br>
+                    New Prince Shri Bhavani Arts and Science College in Medavakkam regularly organizes various events and activities, including workshops, seminars, and educational trips. Recently, the college celebrated its Silver Jubilee and hosted an awareness program by the Alumni Association and Red Ribbon Club, highlighting its commitment to student engagement and community service. The college also emphasizes the importance of alumni relations, as seen in the recent ALUMNI MEET 2025, which aimed to facilitate connections between current students and graduates.
+                    <br>
+                    Recent Events and Activities
+                    <ul>
+                        <li>Silver Jubilee Celebration: Marked 25 years of educational excellence with various festivities.</li>
+                        <li>Awareness Programs: Conducted by the Alumni Association and Red Ribbon Club focusing on health and social issues.</li>
+                        <li>Workshops and Seminars: Regularly organized to enhance student skills and knowledge in various fields.</li>
+                        <li>Inter-Collegiate Events: Opportunities for students to participate in competitions and showcase their talents.</li>
+                    </ul>
+                    <br>
+                    <u><i><b>Future Plans</b></i></u><br>
+                    The college aims to continue expanding its outreach and engagement with both current students and alumni, fostering a strong community that supports personal and professional growth.
+                    <br>
+                    <br>
+                    <b>UG Admission 2025<br></b>
+                    <br>
+                    <b>PG Admission 2025<br></b>
+                    <br>
+                    Grand Opening of ED-MART by the Department of Commerce and ED Cell on 08/03/2019.
+                    <br>
+                    <br>Department of Commerce organizes a Certificate Course on "Governance and Political Advocacy" in association with YUVA - Active Advocacy Forum on 07/03/2019.
+                    <br>
+                    <br>Alumni of the Department of Commerce conducts a seminar on the topic "An overview of GST" on 07/03/2019.
+                                        <br>
+                    <br>A Seminar on "Sensor-based Electronic Automation and IOT" is organized by the department of Electronics and Communication Science on 27/02/2019.
+                    <br>
+                    <br>Department Function "E-Technovat" is organized by the Department of Electronics and Communication Science on 26/02/2019.
+                    <br>
+                    <br>A Symposium on "Tuberculosis" has been conducted by the department of Microbiology on 23/02/2019.
+                    <br>
+                    <br>National Conference on "Recent Developments in Smart Technology" has been organized by the Department of Computer Science and Computer Applications on 14/02/2019.
+                    <br>
+                    <br>Prince Marathon organized jointly by Sports Club and Department of Microbiology on 09/02/2019.
+                    <br>
+                    <br>Pongal festival celebration on 12/01/2019. Games and events conducted by ECO Club, Sports Club, SHEE Club, and Rotaract Club.
+                    <br>
+                    <br>Department of English Organizes a one-day workshop on "Voices of Women in Indian Writing in English” in collaboration with the University of Madras as a part of the 6th Chennai Literary Festival on 09/01/2019.
+                    <br>
+                    <br>INFOSYS pooled campus for BCA and B.Sc(CS) is to be held on 20/12/2018 & 21/12/2018.
+                    <br>
+                    <br>NSS organizes “National Day for the Mentally Retarded persons” on 15/12/2018.
+                    <br>
+                    <br>Citizen Consumer Club celebrates “Energy Conservation Day” to initiate “Green Good Deeds” on 14/12/2018.
+                    <br>
+                    <br>ED Cell organizes a 3-day workshop on “Entrepreneurial Awareness Programme” from 13/12/2018 to 15/12/2018.
+                    <br>
+                    <br>New Prince Shri Bhavani Arts & Science College © 2017 All rights reserved.</b></i>
+                </p>
+            </div>
+
+            <div id="Infra">
+                <h2>Infrastructure</h2>
+                <ul class="ls-text">
+                    <li>Classrooms
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOGQv1yVL3eelYyjzzTbHkg7Z6miwFnUafg&usqp=CAU" alt="Classroom" width="300" height="200" class="img-responsive">
+                        <p class="green-text">
+                            <i><b> Spacious, fully-furnished classrooms with neat desks and benches, light and fan facilities are being maintained in a proper manner, providing a clean and healthy environment conducive to study.</b></i>
+                        </p>
+                    </li>
+                    <li>Library
+                        <img src="https://media.gettyimages.com/id/1193273154/photo/empty-wooden-tables-in-public-library.jpg?s=612x612&w=0&k=20&c=XdP9LgQCNgJxu9pBBfj5mK4dTlYHA7nbi_lGJY37i84=" alt="Library" width="300" height="200" class="img-responsive">
+                        <p class="bl-text">
+                            <i><b>   The college has a well-equipped library with facilities to accommodate 100 students at a time. It has a vast collection of books in keeping with the variety of interests of the students. We have the best collection of technical books on Computer Science, Electronics, and other sciences.</b></i>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="Academics">
+                <h2>Academics</h2>
+                <ul class="ls-text">
+                    <li><i><b>DEPARTMENT OF COMPUTER APPLICATION</b></i></li>
+                    <li style="margin-left:60px">
+                        New Prince Shri Bhavani Arts and Science College in Medavakkam offers a range of academic programs designed to provide students with a solid foundation in their chosen fields. The college emphasizes quality education, practical learning, and skill development to prepare students for the workforce or further studies.
+                    </li>
+                    <li style="margin-left:60px">Academic Programs</li>
+                    <li style="margin-left:60px">Undergraduate Programs</li>
+                    <li style="margin-left:60px">The college offers various undergraduate courses across different disciplines:</li>
+                    <li style="margin-left:60px">Bachelor of Arts (BA)</li>
+                                        <li style="margin-left:60px">English</li>
+                    <li style="margin-left:60px">Tamil</li>
+                    <li style="margin-left:60px">History</li>
+                    <li style="margin-left:60px">Economics</li>
+                    <li style="margin-left:60px">Bachelor of Science (B.Sc.)</li>
+                    <li style="margin-left:60px">Computer Science</li>
+                    <li style="margin-left:60px">Microbiology</li>
+                    <li style="margin-left:60px">Biochemistry</li>
+                    <li style="margin-left:60px">Biotechnology</li>
+                    <li style="margin-left:60px">Electronics and Communication Science</li>
+                    <li style="margin-left:60px">Bachelor of Commerce (B.Com)</li>
+                    <li style="margin-left:60px">General</li>
+                    <li style="margin-left:60px">Corporate Secretaryship</li>
+                    <li style="margin-left:60px">Postgraduate Programs</li>
+                    <li style="margin-left:60px">The college also offers postgraduate courses for students looking to further their education:</li>
+                    <li style="margin-left:60px">Master of Science (M.Sc.)</li>
+                    <li style="margin-left:60px">Computer Science</li>
+                    <li style="margin-left:60px">Applied Microbiology</li>
+                    <li style="margin-left:60px">Master of Commerce (M.Com)</li>
+                    <li style="margin-left:60px">Curriculum and Teaching Methodology</li>
+                    <li style="margin-left:60px">Curriculum: The curriculum is designed to meet industry standards and includes both theoretical and practical components. It is regularly updated to incorporate the latest developments in each field.</li>
+                    <li style="margin-left:60px">Teaching Methodology: The college employs a mix of traditional lectures, interactive sessions, workshops, and hands-on training to enhance learning. Faculty members are experienced and dedicated to providing quality education.</li>
+                    <li style="margin-left:60px">Research and Development</li>
+                    <li style="margin-left:60px">The college encourages research activities among students and faculty. Various projects and research initiatives are undertaken, often in collaboration with other institutions and industries.</li>
+                    <li style="margin-left:60px">Skill Development and Training</li>
+                    <li style="margin-left:60px">The college places a strong emphasis on skill development through various programs, including:</li>
+                    <li style="margin-left:100px">Workshops on soft skills, communication, and leadership.</li>
+                    <li style="margin-left:100px">Training sessions in technical skills relevant to the respective fields of study.</li>
+                    <li style="margin-left:100px">Internships and industrial visits to provide real-world exposure.</li>
+                    <li style="margin-left:0px"><i><b>Academic Support</b></i></li>
+                    <li style="margin-left:60px">Library: The college has a well-equipped library with a vast collection of books, journals, and digital resources to support students' academic needs.</li>
+                    <li style="margin-left:60px">Counseling and Guidance: Academic counseling is available to help students with course selection, career guidance, and personal development.</li>
+                    <li style="margin-left:0px"><i><b>Examination and Evaluation</b></i></li>
+                    <li style="margin-left:60px">The college follows a systematic evaluation process, including internal assessments, assignments, and end-semester examinations to gauge student performance.</li>
+                    <li style="margin-left:0px"><i><b>Extracurricular Activities</b></i></li>
+                    <li style="margin-left:60px">The college encourages participation in extracurricular activities, which play a vital role in the overall development of students. Various clubs and societies are active in organizing events, competitions, and cultural programs.</li>
+                    <li style="margin-left:0px"><i><b>Conclusion</b></i></li>
+                    <li style="margin-left:60px">New Prince Shri Bhavani Arts and Science College is committed to providing a comprehensive academic experience that prepares students for successful careers and lifelong learning. The focus on quality education, skill development, and research ensures that graduates are well-equipped to meet the challenges of the modern world.</li>
+                    <li style="margin-left:0px">Requirements: Applicants who have cleared the higher secondary examination with mathematics or computer science are eligible.</li>
+                </ul>
+            </div>
+
+            <div id="Placements">
+                <h2>Placements</h2>
+                <p class="bl-text">
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1YfvaACwTDfBd3A1wtNxqNdDALpvhPbS3BFahVj6KB4-HrNXa"alt="Placement Image" class="img-responsive">
+                    <br><br><br><br>
+                    <li style="margin-left:60px"><i><b>General Placement Information</b></i></li>
+                    <p>
+                        Placement Cell: Most colleges, including New Prince Shri Bhavani Arts and Science College, typically have a dedicated placement cell that works to facilitate job placements for students. This cell often organizes various activities to enhance students' employability.
+                    </p>
+                    <p>
+                        Industry Connections: The college may have partnerships with various industries and companies, which can help in organizing campus recruitment drives. These connections often lead to internships and job placements for students.
+                    </p>
+                    <p>
+                        Training Programs: Colleges usually conduct training programs to prepare students for the job market. This may include:
+                        <ul>
+                            <li>Soft Skills Training: Workshops on communication, teamwork, and interpersonal skills.</li>
+                            <li>Technical Skills Training: Sessions on relevant software, programming languages, and tools specific to the students' fields of study.</li>
+                            <li>Mock Interviews: Simulated interviews to help students practice and prepare for real interviews.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Internships: Many colleges encourage or require students to complete internships as part of their curriculum. Internships provide practical experience and can often lead to job offers after graduation.
+                    </p>
+                    <p>
+                        Placement Statistics: Colleges often publish placement statistics, including:
+                        <ul>
+                            <li>The percentage of students placed.</li>
+                            <li>The average salary offered.</li>
+                            <li>The highest and lowest salary packages.</li>
+                            <li>The companies that visited the campus for recruitment.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Alumni Network: A strong alumni network can also play a crucial role in placements. Alumni often help current students with job referrals and networking opportunities.
+                    </p>
+                    <p>
+                        Specific Information: For the most accurate and up-to-date information regarding placements at New Prince Shri Bhavani Arts and Science College, I recommend:
+                        <ul>
+                            <li>Visiting the Official Website: Check the college's official website for placement reports, statistics, and details about the placement cell.</li>
+                            <li>Contacting the College: Reach out to the college's placement cell directly via email or phone for specific queries.</li>
+                            <li>Social Media and Forums: Look for student reviews and discussions on platforms like LinkedIn, Facebook, or educational forums.</li>
+                        </ul>
+                    </p>
+                    <br><br><br><br><br>
+                    <h2><i><b>MOTTO</b></i></h2>
+                    <br><br>
+                    The motto of our placement cell is to help students fulfill their dreams by providing quality placement and to assure a challenging career.
+                    <br><br>
+                    To improve the soft skills, quantitative and qualitative aptitude, and verbal reasoning of the students, training programs are conducted.<br>
+                    Guest lectures are arranged in emerging technologies.<br>
+                    Bridge courses are conducted for the benefit of students.<br>
+                    Aptitude training programs by SMART resources.<br>
+                    <ul>
+                        <li>List Of Companies Visited For The Academic Year (2017-2018)</li>
+                        <li>List Of Companies Visited For The Academic Year (2016-2017)</li>
+                        <li>List Of Companies Visited For The Academic Year (2015-2016)</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div id="Sports">
+                <h2>Sports</h2>
+                <p class="bl-text">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAQhRzPSqxgcjM5fGGdh_c70OMoU8tTXPqTw&usqp=CAU" alt="Sports Image" class="img-responsive">
+                    <br>
+                    <br>
+                    <img src="data:image/jpeg;base64,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" alt="Sports Image" class="img-responsive">
+                    <br>
+                    <br>
+                     <img src="data:image/jpeg;base64,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" alt="Sports Image" class="img-responsive">
+                     <br>
+                     <br>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNXboeOXAwRbW3JyxENj_MACzaxdyV-VQdXg&s" alt="Sports Image" class="img-responsive">
+                </p>
+            </div>
+
+            <div id="How">
+                <h2>How to Reach Us</h2>
+                <h2>Contact Us</h2>
+                <h3>Patel Road, 
+                Medavakkam,<br>Chennai – 600 100.<br> 
+                India Phone: 044 2277 1098
+                                <br>Email: info@newprinceshribhavani.com, newprince0205@gmail.com</h3>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.121602764089!2d80.18535184194278!3d12.916023592182308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525ea082b6a2a7%3A0x11dd9d62b1547a6b!2sNew%20Prince%20Shri%20Bhavani%20Arts%20and%20Science%20College!5e0!3m2!1sen!2sin!4v1743405148310!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>
+            </div>
+            <br>
+        </div>
+    </main>
+</body>
+</html>
+                   
